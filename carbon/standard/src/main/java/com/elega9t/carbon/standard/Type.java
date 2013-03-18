@@ -2,7 +2,7 @@ package com.elega9t.carbon.standard;
 
 public enum Type {
 
-    CONNECTOR("connector");
+    CONNECTOR("Connector");
 
     private String type;
 

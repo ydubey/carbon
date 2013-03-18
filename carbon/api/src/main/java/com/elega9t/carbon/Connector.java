@@ -7,6 +7,4 @@ public interface Connector extends RunnableEntity, RunnableEntityLifecycleListen
 
     void setPort(int port);
 
-    void setAcceptCount(int acceptCount);
-
 }
