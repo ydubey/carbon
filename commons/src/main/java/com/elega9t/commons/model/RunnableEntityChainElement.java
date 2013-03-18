@@ -12,7 +12,7 @@ public class RunnableEntityChainElement extends RunnableEntityImpl implements Ru
     }
 
     @Override
-    public void started(RunnableEntity runnableEntity) {
+    public final void started(RunnableEntity runnableEntity) {
         try {
             start();
         } catch (RunnableEntityException e) {
@@ -21,7 +21,7 @@ public class RunnableEntityChainElement extends RunnableEntityImpl implements Ru
     }
 
     @Override
-    public void stopped(RunnableEntity runnableEntity) {
+    public final void stopped(RunnableEntity runnableEntity) {
         try {
             stop();
         } catch (RunnableEntityException e) {
