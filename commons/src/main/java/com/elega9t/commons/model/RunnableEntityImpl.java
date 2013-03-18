@@ -29,4 +29,16 @@ public class RunnableEntityImpl extends EntityImpl implements RunnableEntity {
         return lifecycleListeners.remove(runnableEntityLifecycleListener);
     }
 
+    public void fireStartingEvent() {
+        for (RunnableEntityLifecycleListener lifecycleListener : lifecycleListeners) {
+            lifecycleListener.started(this);
+        }
+    }
+
+    public void fireStoppingEvent() {
+        for (RunnableEntityLifecycleListener lifecycleListener : lifecycleListeners) {
+            lifecycleListener.stopped(this);
+        }
+    }
+
 }
