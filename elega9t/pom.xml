@@ -12,6 +12,7 @@
 
     <modules>
         <module>../commons</module>
+        <module>../carbon</module>
     </modules>
 
     <dependencyManagement>
@@ -28,5 +29,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
 </project>
