@@ -1,9 +1,14 @@
 package com.elega9t.commons.model;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class RunnableEntityChainElement extends RunnableEntityImpl implements RunnableEntity, RunnableEntityLifecycleListener {
 
-    public RunnableEntityChainElement(String name) {
-        super(name);
+    private static final Logger LOGGER = Logger.getLogger(RunnableEntityChainElement.class.getName());
+
+    public RunnableEntityChainElement(String name, String type) {
+        super(name, type);
     }
 
     @Override
@@ -11,7 +16,7 @@ public class RunnableEntityChainElement extends RunnableEntityImpl implements Ru
         try {
             start();
         } catch (RunnableEntityException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, String.format("Error while starting %s '%s'.", getType(), getName()), e);
         }
     }
 
@@ -20,7 +25,7 @@ public class RunnableEntityChainElement extends RunnableEntityImpl implements Ru
         try {
             stop();
         } catch (RunnableEntityException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, String.format("Error while stopping %s '%s'.", getType(), getName()), e);
         }
     }
 

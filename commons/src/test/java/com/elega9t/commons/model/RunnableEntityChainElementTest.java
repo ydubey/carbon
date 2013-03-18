@@ -13,6 +13,7 @@ import static org.mockito.Mockito.verify;
 public class RunnableEntityChainElementTest {
 
     private static final String NAME = "testEntity";
+    private static final String TYPE = "testEntityType";
 
     private RunnableEntityChainElement test;
 
@@ -21,7 +22,7 @@ public class RunnableEntityChainElementTest {
 
     @Before
     public void setUp() throws Exception {
-        test = spy(new RunnableEntityChainElement(NAME));
+        test = spy(new RunnableEntityChainElement(NAME, TYPE));
     }
 
     @Test

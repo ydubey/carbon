@@ -9,12 +9,13 @@ import static org.junit.Assert.assertNotNull;
 public class EntityImplTest {
 
     private static final String NAME = "testEntity";
+    private static final String TYPE = "testEntityType";
 
     private EntityImpl test;
 
     @Before
     public void setUp() throws Exception {
-        test = new EntityImpl(NAME);
+        test = new EntityImpl(NAME, TYPE);
     }
 
     @Test
@@ -25,6 +26,11 @@ public class EntityImplTest {
     @Test
     public void name_isInitialized() throws Exception {
         assertEquals(NAME, test.getName());
+    }
+
+    @Test
+    public void type_isInitialized() throws Exception {
+        assertEquals(TYPE, test.getType());
     }
 
 }

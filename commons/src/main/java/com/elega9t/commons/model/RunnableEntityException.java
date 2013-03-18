@@ -17,8 +17,4 @@ public class RunnableEntityException extends Exception {
         super(cause);
     }
 
-    public RunnableEntityException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
-
 }

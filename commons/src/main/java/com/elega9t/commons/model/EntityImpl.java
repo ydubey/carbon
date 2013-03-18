@@ -6,10 +6,12 @@ public class EntityImpl implements Entity {
 
     private final String id;
     private final String name;
+    private final String type;
 
-    public EntityImpl(String name) {
+    public EntityImpl(String name, String type) {
         this.id = UUID.randomUUID().toString();
         this.name = name;
+        this.type = type;
     }
 
     @Override
@@ -20,6 +22,11 @@ public class EntityImpl implements Entity {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getType() {
+        return type;
     }
 
 }

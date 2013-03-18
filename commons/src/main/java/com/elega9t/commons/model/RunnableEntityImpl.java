@@ -7,8 +7,8 @@ public class RunnableEntityImpl extends EntityImpl implements RunnableEntity {
 
     private List<RunnableEntityLifecycleListener> lifecycleListeners = new ArrayList<RunnableEntityLifecycleListener>();
 
-    public RunnableEntityImpl(String name) {
-        super(name);
+    public RunnableEntityImpl(String name, String type) {
+        super(name, type);
     }
 
     @Override
