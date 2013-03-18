@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../carbon/api/api.iml" filepath="$PROJECT_DIR$/../carbon/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbon/carbon.iml" filepath="$PROJECT_DIR$/../carbon/carbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/../commons/commons.iml" filepath="$PROJECT_DIR$/../commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/elega9t.iml" filepath="$PROJECT_DIR$/elega9t.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../carbon/standard/standard.iml" filepath="$PROJECT_DIR$/../carbon/standard/standard.iml" />
     </modules>
   </component>
 </project>
