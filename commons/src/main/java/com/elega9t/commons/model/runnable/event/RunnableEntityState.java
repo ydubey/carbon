@@ -1,4 +1,4 @@
-package com.elega9t.commons.model.event;
+package com.elega9t.commons.model.runnable.event;
 
 public enum RunnableEntityState {
 

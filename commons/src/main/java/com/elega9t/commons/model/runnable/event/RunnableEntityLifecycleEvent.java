@@ -1,6 +1,6 @@
-package com.elega9t.commons.model.event;
+package com.elega9t.commons.model.runnable.event;
 
-import com.elega9t.commons.model.RunnableEntity;
+import com.elega9t.commons.model.runnable.RunnableEntity;
 
 public class RunnableEntityLifecycleEvent {
 

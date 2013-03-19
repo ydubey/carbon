@@ -1,6 +1,6 @@
-package com.elega9t.commons.model;
+package com.elega9t.commons.model.runnable;
 
-import com.elega9t.commons.model.event.RunnableEntityLifecycleEvent;
+import com.elega9t.commons.model.runnable.event.RunnableEntityLifecycleEvent;
 
 public interface RunnableEntityLifecycleListener {
 

@@ -1,4 +1,4 @@
-package com.elega9t.commons.model;
+package com.elega9t.commons.model.runnable;
 
 public class RunnableEntityException extends Exception {
 

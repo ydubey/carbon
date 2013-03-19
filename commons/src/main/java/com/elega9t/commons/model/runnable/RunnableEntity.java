@@ -1,4 +1,6 @@
-package com.elega9t.commons.model;
+package com.elega9t.commons.model.runnable;
+
+import com.elega9t.commons.model.Entity;
 
 public interface RunnableEntity extends Entity {
 

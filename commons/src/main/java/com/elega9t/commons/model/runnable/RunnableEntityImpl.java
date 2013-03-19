@@ -1,7 +1,8 @@
-package com.elega9t.commons.model;
+package com.elega9t.commons.model.runnable;
 
-import com.elega9t.commons.model.event.RunnableEntityLifecycleEvent;
-import com.elega9t.commons.model.event.RunnableEntityState;
+import com.elega9t.commons.model.EntityImpl;
+import com.elega9t.commons.model.runnable.event.RunnableEntityLifecycleEvent;
+import com.elega9t.commons.model.runnable.event.RunnableEntityState;
 
 import java.util.ArrayList;
 import java.util.List;
