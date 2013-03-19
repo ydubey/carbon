@@ -1,5 +1,7 @@
 package com.elega9t.commons.model;
 
+import com.elega9t.commons.model.event.RunnableEntityLifecycleEvent;
+import com.elega9t.commons.model.event.RunnableEntityState;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,15 +28,15 @@ public class RunnableEntityChainElementTest {
     }
 
     @Test
-    public void started_invokesStart() throws Exception {
-        test.started(mockRunnableEntity);
+    public void STARTING_invokesStart() throws Exception {
+        test.lifecycleEventOccurred(new RunnableEntityLifecycleEvent(RunnableEntityState.STARTING, mockRunnableEntity));
 
         verify(test).start();
     }
 
     @Test
-    public void stopped_invokesStop() throws Exception {
-        test.stopped(mockRunnableEntity);
+    public void STOPPING_invokesStart() throws Exception {
+        test.lifecycleEventOccurred(new RunnableEntityLifecycleEvent(RunnableEntityState.STOPPING, mockRunnableEntity));
 
         verify(test).stop();
     }
