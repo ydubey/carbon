@@ -54,7 +54,7 @@ public class RunnableEntityImpl extends EntityImpl implements RunnableEntity {
     }
 
     @Override
-    public void stop() throws RunnableEntityException {
+    public final void stop() throws RunnableEntityException {
         long startTime = System.currentTimeMillis();
         try {
             setState(RunnableEntityState.STOPPING);
@@ -71,7 +71,7 @@ public class RunnableEntityImpl extends EntityImpl implements RunnableEntity {
     }
 
     @Override
-    public void pause() throws RunnableEntityException {
+    public final void pause() throws RunnableEntityException {
         long startTime = System.currentTimeMillis();
         try {
             setState(RunnableEntityState.PAUSING);
@@ -88,7 +88,7 @@ public class RunnableEntityImpl extends EntityImpl implements RunnableEntity {
     }
 
     @Override
-    public void resume() throws RunnableEntityException {
+    public final void resume() throws RunnableEntityException {
         long startTime = System.currentTimeMillis();
         try {
             setState(RunnableEntityState.RESUMING);
@@ -105,7 +105,7 @@ public class RunnableEntityImpl extends EntityImpl implements RunnableEntity {
     }
 
     @Override
-    public void destroy() throws RunnableEntityException {
+    public final void destroy() throws RunnableEntityException {
         long startTime = System.currentTimeMillis();
         try {
             setState(RunnableEntityState.DESTROYING);

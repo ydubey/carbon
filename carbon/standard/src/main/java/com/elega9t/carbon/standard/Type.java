@@ -2,7 +2,7 @@ package com.elega9t.carbon.standard;
 
 public enum Type {
 
-    PROTOCOL_HANDLER("ProtocolHandler");
+    ENDPOINT("Endpoint");
 
     private String type;
 
